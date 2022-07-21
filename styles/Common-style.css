@@ -1,0 +1,162 @@
+
+            /************---------
+                Common style start 
+            -------------*********/
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+/* -------header-button tap hidden button Start----- */
+
+.view-common-button {
+    padding: 10px 25px;
+    font-weight: 700;
+    display: block;
+    background: #2c3e50;
+    color: aliceblue;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    position: relative;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.view-common-button:hover {
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 30px aliceblue;
+    transform: translateY(-4px) scale(1.05);
+}
+
+.view-common-button:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    transform: translateY(0) scale(0.95);
+}
+
+.view-common-button:after {
+    content: "";
+    border: 2px solid #34495e;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    width: 40%;
+    transition: all 0.3s;
+}
+
+.view-common-button:hover:after {
+    width: 70%;
+}
+
+.view-common-button:active:after {
+    width: 40%;
+}
+
+.view-common-button:before {
+    content: "";
+    position: absolute;
+    border: 1px solid transparent;
+    top: -15%;
+    left: 10%;
+    width: 0;
+    border-radius: 30%;
+    transform: translate3d(-50%, 0, 0);
+}
+
+.view-common-button:hover:before {
+    border: 1px solid #34495e;
+    animation: backforth 1s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backforth {
+    0% {
+        left: 10%;
+        width: 0;
+    }
+
+    25% {
+        width: 50%;
+    }
+
+    50% {
+        left: 90%;
+        width: 0;
+    }
+
+    75% {
+        width: 50%;
+    }
+
+    100% {
+        left: 10%;
+        width: 0;
+    }
+}
+/* -------header-button tap hidden button end----- */
+
+/* -------------animated ball style ----------------*/
+
+.player img.animated-ball {
+    width: 5%;
+    position: absolute;
+    bottom: 30vw;
+    right: 30vw;
+    animation: animate 2.9s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* -----------navbar button-style -----------------*/
+.active {
+    background-color: #ffbb98;
+    color: #344648;
+}
+/* -------------transfer-common button--------------- */
+.transfer-btn {
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 2px solid #344648;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 10px 0;
+    color: #344648;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/* -------------footer-social link------------- */
+
+.social {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #7d8e95;
+}
+
+.social a {
+    padding: 0 10px;
+}
+
+.social a:hover {
+    color: #ffbb98;
+}
+
+/************ Common style End *********/
