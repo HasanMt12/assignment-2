@@ -93,7 +93,13 @@ section.blog .match-info .menu {
     margin-bottom: 50px;
     display: inline-block;
 }
-
+.menu{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 
 section.blog .match-info .menu .select-btn {
     padding: 10px 0;
@@ -121,6 +127,10 @@ section.blog .match-info .contant {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+}
+.card{
+    border-radius: 2em 1em 4em / 0.5em 3em;
+    background-color: #e1e9ec;
 }
 
 section.blog .match-info .contant .card {
