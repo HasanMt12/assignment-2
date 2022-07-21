@@ -48,6 +48,7 @@
 
 .hero-section .hero-section-content button {
     margin-bottom: 20px;
+    margin-left: 20px;
     width: 170px;
     cursor: pointer;
 }
@@ -83,6 +84,7 @@ section.blog .match-info {
     display: flex;
 }
 
+/* -----nav-menu start -------*/
 section.blog .match-info .menu {
     margin-right: 20px;
     background-color: #7d8e95;
@@ -101,6 +103,7 @@ section.blog .match-info .menu .select-btn {
     width: 180px;
     margin-bottom: 20px;
     align-items: center;
+    
 }
 
 section.blog .match-info .menu .select-btn a {
@@ -111,6 +114,7 @@ section.blog .match-info .menu .select-btn:hover {
     border: 2px solid #ffbb98;
 }
 
+/* -----blog-content start -------*/
 section.blog .match-info .contant {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -372,9 +376,13 @@ section.blog .match-info .contant {
         padding-right: 20px;
         width: 100%;
     }
+    .hero-section .hero-section-content{
+        margin-left: 70px;
+    }
 
     .hero-section .hero-section-content h1 {
         font-size: 40px;
+
     }
 
     section.blog .match-info .flexible-menu {
