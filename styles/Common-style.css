@@ -106,8 +106,8 @@
 .player img.animated-ball {
     width: 5%;
     position: absolute;
-    bottom: 30vw;
-    right: 34vw;
+    bottom: 420px;
+    right: 480px;
     animation: animate 2.9s linear infinite;
 }
 
